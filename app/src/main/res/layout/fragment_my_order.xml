@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_my_order"
+        android:layout_width="match_parent"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        android:layout_height="?attr/actionBarSize"/>
+    <FrameLayout
+        android:id="@+id/framelayout_my_order"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.muxi.shopdemo.widget.XRadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
+    <TextView
+        android:text="请选择支付方式："
+        android:textColor="#0F2535"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/alipay_standard" />
+
+        <RadioButton
+            android:id="@+id/rb_alipay"
+            android:checked="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_radio_btn"
+            android:text="支付宝" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/weixin_standard" />
+
+        <RadioButton
+            android:id="@+id/rb_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_radio_btn"
+            android:text="微信支付" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/unionpay_standard" />
+
+        <RadioButton
+            android:id="@+id/rb_unionpay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_radio_btn"
+            android:text="银联支付" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_toPay"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_margin="50dp"
+        android:background="#ffffff"
+        android:text="去支付" />
+</com.muxi.shopdemo.widget.XRadioGroup>

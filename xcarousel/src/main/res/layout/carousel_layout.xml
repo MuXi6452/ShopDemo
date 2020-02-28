@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--  轮播图  -->
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="8dp"
+        android:id="@+id/banner_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/banner_tablayout"
+        app:tabBackground="@android:color/transparent"
+        app:tabRippleColor="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-30dp"
+        app:tabIndicatorHeight="0dp"
+        android:layout_height="30dp"/>
+</LinearLayout>

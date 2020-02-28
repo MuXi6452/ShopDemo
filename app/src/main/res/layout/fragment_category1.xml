@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_category_content"
+        android:text="category子页面111"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
